@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const booksController = require('../controllers/book');
+const userController = require('../controllers/user');
 const isLoginSuccess = require('../helpers/auth');
 
 
-
-router.get('/', booksController.gets);
+router.get('/', userController.gets);
+router.post('/', userController.add);
 
 module.exports = router;
