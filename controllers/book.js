@@ -46,3 +46,5 @@ methods.findTitle = (req, res, next) => {
     res.send(book);
   });
 }
+
+module.exports = methods;
